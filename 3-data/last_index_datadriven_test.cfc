@@ -1,7 +1,7 @@
 
 component extends="mxunit.framework.TestCase" {
 	
-	//rewrite
+	//Uses one expected good value.
 	function indexof_should_work_with_expected_data(){
 		x =  [10,0,3,-1,99,100];
 		y = 3;
@@ -12,20 +12,20 @@ component extends="mxunit.framework.TestCase" {
 
 
 
-	my_data = [6,5,4,3,2,1];
+	my_data = [1,2,3,4,5,6];
 	/**
 	*
 	* This input finds the bug
 	* 
-	* @dataprovider my_data 
+	* @dataprovider my_data
 	*/
 	function indexof_should_work_with_all_elements(i){
 		x =  [10,0,3,-1,99,100];
 		y = x[i];
-		debug(i);
+		// debug(i);
 		expected = i;
 		actual = lastIndexOf( x, y );
-		assertEquals(expected, actual, "Failed on input value #i# for for array value #y#");
+		assertEquals(expected, actual, "Failed on data input #i# for array value #y#");
 	}	
 
 
