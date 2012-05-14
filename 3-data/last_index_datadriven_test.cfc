@@ -35,7 +35,7 @@ component extends="mxunit.framework.TestCase" {
 	*/   	 
 	private function lastIndexOf(x, y) {
         
-        for (i = x.size(); i > 1; i--){
+        for (i = x.size(); i >= 1; i--){
             if( x[i]==y ) return i;
         }
     	return -1;

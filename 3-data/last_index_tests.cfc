@@ -2,7 +2,7 @@
 component extends="mxunit.framework.TestCase" {
 	
 
-	function indexof_should_work_with_expected_data(){
+	function lastindexof_should_work_with_expected_data(){
 		x =  [10,0,3,-1,99,100];
 		y = 0;
 		expected = 2;

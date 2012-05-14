@@ -9,7 +9,7 @@ component name="Thing"  {
 	}	
 
 
-
+	//Dependency inection
 	public any function set_twitter(twit) {
 		variables.twitter = twit;
 	}

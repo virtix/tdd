@@ -1,10 +1,9 @@
-
 component extends="mxunit.framework.TestCase" {
 
 
 
 function spike_twitter(){
-		
+
 		query = 'mxunit';
 		twitter = new http(); 
 		twitter.setMethod("get"); 
@@ -20,6 +19,6 @@ function spike_twitter(){
 
 	}
 
-	
+
 }
 

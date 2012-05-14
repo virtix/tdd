@@ -1,4 +1,4 @@
-<cfscript>
+
 component extends="mxunit.framework.TestCase" {
 	
 	_data = [
@@ -28,7 +28,6 @@ component extends="mxunit.framework.TestCase" {
 		
 
 }
-</cfscript>
 
 
 

@@ -13,11 +13,13 @@ component extends="mxunit.framework.TestCase" {
 		//execute Thing
 		tweets = thing.search_twitter('mxunit');
 
+		debug(tweets.size());
+
+
 		//Debug
 	    for (tweet in tweets){
 	    	debug(tweet);
 		}
-
 		//Test it
 		assert(tweets.size() > 0, 'What up, yo?');
 	
