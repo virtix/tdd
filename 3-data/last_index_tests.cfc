@@ -3,10 +3,12 @@ component extends="mxunit.framework.TestCase" {
 	
 
 	function lastindexof_should_work_with_expected_data(){
-		x =  [10,0,3,-1,99,100];
+		//expected data
+		x =  [10,0,3,-1,0,99,100];
 		y = 0;
-		expected = 2;
+		expected = 5;
 		actual = lastIndexOf( x, y );
+		debug(actual);
 		assertEquals(expected, actual);
 	}
 

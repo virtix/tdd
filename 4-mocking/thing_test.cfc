@@ -11,7 +11,7 @@ component extends="mxunit.framework.TestCase" {
 		thing = new Thing();
 
 		//execute Thing
-		tweets = thing.search_twitter('mxunit');
+		tweets = thing.search_twitter('cfobjective');
 
 		debug(tweets.size());
 
@@ -27,7 +27,6 @@ component extends="mxunit.framework.TestCase" {
 
 
 
-	
 	function test_the_thing_using_a_mock(){
 		
 		//thing under test
@@ -40,7 +39,10 @@ component extends="mxunit.framework.TestCase" {
 
 		//define mock and inject into Thing
 		twitter = mock('Twitter');
+		//define behavior
 		twitter.search('mxunit').returns( json );
+		
+		//Inject mock into Thing
 		thing.set_twitter(twitter);
 
 		//execute Thing
@@ -55,8 +57,6 @@ component extends="mxunit.framework.TestCase" {
 		assert(tweets.size() > 0, 'What up, yo?');
 	
 	}
-
-	
 
 } //
 

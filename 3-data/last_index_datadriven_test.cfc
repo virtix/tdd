@@ -3,9 +3,9 @@ component extends="mxunit.framework.TestCase" {
 	
 	//Uses one expected good value.
 	function indexof_should_work_with_expected_data(){
-		x =  [10,0,3,-1,99,100];
-		y = 3;
-		expected = 3;
+		x =  [10,0,3,-1,0,99,100];
+		y = 0;
+		expected = 5;
 		actual = lastIndexOf( x, y );
 		assertEquals(expected, actual);
 	}
@@ -35,7 +35,7 @@ component extends="mxunit.framework.TestCase" {
 	*/   	 
 	private function lastIndexOf(x, y) {
         
-        for (i = x.size(); i >= 1; i--){
+        for (i = x.size(); i > 1; i--){
             if( x[i]==y ) return i;
         }
     	return -1;
