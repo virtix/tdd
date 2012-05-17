@@ -1,7 +1,7 @@
 component extends="mxunit.framework.TestCase" {
 
 
-function spike_twitter(){
+function twitter_sketch(){
 		query = 'cfobjective';
 		
 		twitter = new http(); 

@@ -15,7 +15,7 @@ public any function search(query) {
 
 
 
-function spike_twitter(){
+function twitter_sketch(){
 		query = 'cfobjective';
 		
 		tweets = search(query);	
