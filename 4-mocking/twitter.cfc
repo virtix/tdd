@@ -7,7 +7,6 @@ component name="Twitter"  {
 	}	
 
 
-
 	public any function search(string q) {
 		twitter = new http(); 
 		twitter.setMethod("get"); 

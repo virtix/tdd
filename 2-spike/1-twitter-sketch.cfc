@@ -6,7 +6,7 @@ function spike_twitter(){
 		
 		twitter = new http(); 
 		twitter.setMethod("get"); 
-		twitter.setCharset("utf-8");S
+		twitter.setCharset("utf-8");
 		twitter.setUrl("http://search.twitter.com/search.json?q=" & query );
 		
 		results = twitter.send().getPrefix();
@@ -21,9 +21,6 @@ function spike_twitter(){
 
  }
 
-//  debug(structKeyArray(tweet).size());
-//  assertIsStruct(tweet, 'Not a struct? = #tweet.toString()#');
-//  assert( structKeyArray(tweet).size() > 8 );
 
 } //end component
 

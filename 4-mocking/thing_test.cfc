@@ -11,7 +11,7 @@ component extends="mxunit.framework.TestCase" {
 		thing = new Thing();
 
 		//execute Thing
-		tweets = thing.search_twitter('cfobjective');
+		tweets = thing.search_twitter('mxunit');
 
 		debug(tweets.size());
 
